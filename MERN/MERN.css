@@ -1,0 +1,121 @@
+mern-container{
+    font-family: Arial, sans-serif;
+}
+.mern-heading {
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(0, 157, 255);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+#mern-head {
+    padding: 4rem;
+    text-align: center;
+}
+.mern{
+    margin: 2rem;
+    line-height: 1.5rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+th, td {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    
+}
+@media (max-width: 600px) {
+    .mern-heading {
+        height: auto;
+        padding: 1rem;
+    }
+    #mern-head {
+        padding: 1rem;
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+    .mern{
+        margin: 1rem;
+        line-height: 1rem;
+    }
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+.reffrences{
+    margin-left: 50px;
+    width: 700px;
+    margin-top: 3rem;
+   
+}
+#h3ref{
+    color: rgb(41, 36, 36);
+}
+#p-ref{
+    color: rgb(116, 103, 103);
+}
+
+
+/* Media Query for screens smaller than 1200px */
+@media (max-width: 1199px) {
+    .reffrences {
+        margin-left: 100px;
+        width: 500px;
+    }
+    .logo{
+        margin-top: -630px;
+    }
+}
+
+/* Media Query for screens smaller than 992px */
+@media (max-width: 991px) {
+    .reffrences {
+        margin-left: 50px;
+        width: 500px;
+    }
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .reffrences {
+        margin-left: 20px;
+        width: calc(100% - 30px); /* Ensure it takes almost the full width with padding */
+    }
+    .logo{
+        margin-top: -650px;
+    }
+}
+
+/* Media Query for screens smaller than 576px (mobile screens) */
+@media (max-width: 575px) {
+    .reffrences {
+        margin-left: 30px;
+        width: calc(100% - 10px); /* Ensure it takes almost the full width with padding */
+    }
+    .logo{
+        margin-top: -600px;
+    }
+
+    #h3ref {
+        font-size: 1.2em; /* Adjust font size if needed */
+    }
+
+    #p-ref {
+        font-size: 0.9em; /* Adjust font size if needed */
+    }
+}
+@media (max-width: 320px){
+.logo{
+    margin-top: -740px;
+}
+}

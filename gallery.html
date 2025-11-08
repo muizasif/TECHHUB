@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="./app/scss/style.css ">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>Tech Hub Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <a href="./index.html"> <img src="./app/images/log.png" alt=""></a>
+        </div>
+        <div class="menu-hamburger" id="toggle">
+
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-list" id="primary-navbar" data-visiable="false">
+                <li><a href="index.html" class="navbar-links">Home</a></li>
+                <li><a href="index.html#courses" class="navbar-links">Free Courses</a></li>
+                <li><a href="paidcourses.html" class="navbar-links">Paid Courses</a></li>
+                <li><a href="./gallery.html" class="navbar-links">Gallery</a></li>
+                <li><a href="index.html#contact" class="navbar-links">Contact</a></li>
+                <li><a href="https://wa.me/+923006622815" class="btn btn-get-courses" id="get-b"><span
+                            style="color: whitesmoke; display: flex;"><img src="app/images/whatsapp.png" alt="logo"
+                                style="height: 30px; width: 30px;">&nbsp;&nbsp;+92 300-6622815</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero-section -->
+    <div id="particles-js" style="position: absolute;  top: 0px; width: 100%;  height: 54%;"> </div>
+    <div class="hero-section">
+        <h1>Welcome to Tech Hub Institute</h1>
+        <p>Your gateway to innovation and technology excellence.</p>
+    </div>
+
+    <!-- Content Above Gallery -->
+    <div class="content-main">
+        <div class="content">
+            <h2>Empowering the Future</h2>
+            <p>At Tech Hub Institute, we foster innovation and offer programs to provide the latest in tech education
+                and hands-on experience. Join us to enhance your skills in a collaborative environment.</p>
+            <p>Our mission is to bridge theory and practice, preparing students for the tech industry with
+                state-of-the-art facilities and experienced faculty.</p>
+
+        </div>
+        <div class="content-right">
+            <img src="/imge/front.jpg" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- Teachers Section -->
+    <div class="teachers">
+        <h2>Meet Our Expert Instructors</h2>
+        <p>Our faculty comprises seasoned professionals and industry leaders who bring a wealth of knowledge and
+            practical experience to the classroom. They are dedicated to mentoring and guiding our students to achieve
+            their fullest potential. Learn from the best and become a part of our thriving tech community.</p>
+        <p>Our instructors are not just teachers but mentors who are passionate about technology and education. They
+            continuously update the curriculum to reflect the latest industry trends and innovations, ensuring that our
+            students receive relevant and up-to-date knowledge.</p>
+    </div>
+
+    <div class="gallery">
+        <ul class="controls" style="display: none;">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="ice-cream">ice cream</li>
+            <li class="buttons" data-filter="choclate">choclate</li>
+            <li class="buttons" data-filter="cake">cake</li>
+        </ul>
+
+        <div class="img-container">
+
+            <a href="./imge/pic1.jpg" class="image ice-cream">
+                <img src="./imge/pic1.jpg" alt="">
+            </a>
+            <a href="./imge/pic2.jpg" class="image ice-cream">
+                <img src="./imge/pic2.jpg" alt="">
+            </a>
+            <a href="./imge/gall 3.jpg" class="image ice-cream">
+                <img src="./imge/pic3.jpg" alt="">
+            </a>
+            <a href="./imge/pic4.jpg" class="image ice-cream">
+                <img src="./imge/pic4.jpg" alt="">
+            </a>
+            <a href="./imge/pic5.jpg" class="image choclate ">
+                <img src="./imge/pic5.jpg" alt="">
+            </a>
+            <a href="./imge/pic6.jpg" class="image choclate ">
+                <img src="./imge/pic6.jpg" alt="">
+            </a>
+            <a href="./imge/pic7.jpg" class="image choclate ">
+                <img src="./imge/pic7.jpg" alt="">
+            </a>
+            <a href="./imge/pic8.jpg" class="image choclate ">
+                <img src="./imge/pic8.jpg" alt="">
+            </a>
+            <a href="./imge/pic9.jpg" class="image cake ">
+                <img src="./imge/pic9.jpg" alt="">
+            </a>
+
+            <a href="./imge/pic10.jpg" class="image cake ">
+                <img src="./imge/pic10.jpg" alt="">
+            </a>
+            <a href="./imge/pic11.jpg" class="image cake ">
+                <img src="./imge/pic11.jpg" alt="">
+            </a>
+            <a href="./imge/pic12.jpg" class="image cake ">
+                <img src="./imge/pic12.jpg" alt="">
+            </a>
+        </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.buttons').click(function () {
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+
+                var filter = $(this).attr('data-filter')
+
+                if (filter == 'all') {
+                    $('.image').show(200);
+                } else {
+                    $('.image').not('.' + filter).hide(400);
+                    $('.image').filter('.' + filter).show(200);
+
+
+                }
+
+            });
+
+            $('.gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            })
+
+        });
+
+    </script>
+
+    </div>
+
+    <!-- Content Below Gallery -->
+    <div class="bottom-content">
+        <h2>About Tech Hub Institute</h2>
+        <p>Tech Hub Institute is more than just a place of learning; it's a thriving ecosystem where technology meets
+            creativity. Our state-of-the-art facilities, experienced faculty, and a wide network of industry
+            professionals ensure that our students receive the best education and opportunities. Whether you are a
+            beginner or an advanced learner, we have something for everyone. Come and be a part of the future with Tech
+            Hub Institute.</p>
+        <p>We offer a range of programs in software development, data science, artificial intelligence, cybersecurity,
+            and more. Our alumni have gone on to work for leading tech companies, and many have started their own
+            successful ventures. Join us and be inspired to innovate and excel in the tech world.</p>
+    </div>
+
+    <footer class="footer" id="footer" style="margin-top: 50px;">
+
+        <div class="copyright">
+            <h1>2024 <span>©</span> Copyright <span>TECH-HUB</span> And Design By <a
+                    href="https://jakba.com">Jakba.com</a></h1>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json',
+            function () {
+                console.log('particles.json loaded...')
+            })
+    </script>
+
+
+
+    <script src="app/js/script.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/particles.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>

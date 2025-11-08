@@ -1,0 +1,98 @@
+    body {
+        background-image: linear-gradient(to bottom right, rgb(0, 157, 255), #ffffff);
+        font-family: Arial, sans-serif;
+        
+    }
+
+    .error-message {
+        color: red;
+    }
+
+    .rounded-input {
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .rounded-input:focus {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .narrow-card {
+        max-width: 1200px;
+        margin: auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .card-header {
+        background-image: url(tech-hub\ logo.png);
+        background-repeat: no-repeat;
+    background-position: left center;
+        text-align: center;
+        background-color: rgb(0, 157, 255);
+        color: #fff;
+        border-radius: 20px 20px 0 0;
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+
+    .card-header h5 {
+        font-size: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        background-color:  rgb(0, 157, 255);
+        border: none;
+        border-radius: 20px;
+        padding: 10px 30px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 576px) {
+        .narrow-card {
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .card-header {
+            background-position: center top;
+            padding: 35px 0;
+        }
+
+        .card-header h5 {
+            font-size: 20px;
+        margin-top: 30px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .card-header {
+            background-position: center top;
+            padding: 35px 0;
+        }
+
+        .card-header h5 {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .card-header h3 {
+            font-size: 30px;
+            margin-top: 40px;
+        }
+    }
+
